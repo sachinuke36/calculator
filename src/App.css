@@ -1,0 +1,99 @@
+.app{
+  margin: 10vh auto;
+  border: 1px solid gray;
+  max-width: 60vw;
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app .input{
+  min-width: 90%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.app .input input{
+  min-width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.numbers{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 10px;
+  padding: 10px;
+  /* border: 1px solid black; */
+}
+.numbers button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.buttons{
+  border: 1px solid black;
+  width: 95%;
+}
+.operators button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: max(5px,10px);
+}
+.operators{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  width: 100%;
+  gap: 10px;
+  padding: 10px;
+  /* border: 1px solid black; */
+}
+.options button{
+  padding: max(5px,10px);
+}
+.options{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 10px;
+}
+.flex{
+  display: flex;
+}
+button{
+  font-size: 20px;
+  animation: rotate 3s linear;
+}
+
+
+@media (max-width:568px) {
+  .app{
+    max-width: 100vw;
+    padding: 5px;
+  }
+  button{
+    font-size: 16px;
+    padding: 3px;
+  }
+}
+@media (max-width:338px) {
+  .app{
+    max-width: 100vw;
+    padding: 3px;
+  }
+  button{
+    font-size: 14px;
+    padding: 2px;
+  }
+  .options{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 3px;
+  }
+}
